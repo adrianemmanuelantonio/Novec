@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+	
+    <EditText
+        android:id="@+id/speak_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/speak_button"
+        android:hint="@string/type"
+        android:inputType="text"
+        android:maxLines="1" />
+
+	<ImageButton
+        android:id="@+id/clear_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/clear"
+        android:src="@drawable/eraser"
+        android:contentDescription="@string/imgdesc" />
+
+	<ImageButton
+        android:id="@+id/speak_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/clear_button"
+        android:text="@string/speak"
+        android:src="@drawable/speak"
+        android:contentDescription="@string/imgdesc" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageButton1"
+        android:layout_below="@+id/imageButton1"
+        android:layout_marginTop="67dp"
+        android:src="@drawable/toysfolder"
+        android:contentDescription="@string/imgdesc" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_marginLeft="28dp"
+        android:contentDescription="@string/imgdesc"
+        android:src="@drawable/fruitsfolder" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton3"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/imageButton3"
+        android:contentDescription="@string/imgdesc"
+        android:src="@drawable/vehiclesfolder" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButton4"
+        android:layout_below="@+id/clear_button"
+        android:layout_marginTop="83dp"
+        android:contentDescription="@string/imgdesc"
+        android:src="@drawable/gadgetsfolder" />
+
+</RelativeLayout>
