@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#B2BAD9"
+     >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="446dp"
+        android:background="#B2BAD9">
+        
+    
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:background="#D4DFEB" >
+
+        <ImageButton
+            android:id="@+id/grapes"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignBottom="@+id/strawberry"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="14dp"
+            android:background="@null"
+            android:contentDescription="@string/imgdesc"
+            android:src="@drawable/grapes"
+            android:tag="Grapes" />
+
+        <ImageButton
+            android:id="@+id/strawberry"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="29dp"
+            android:layout_toLeftOf="@+id/grapes"
+            android:background="@null"
+            android:contentDescription="@string/imgdesc"
+            android:src="@drawable/strawberry"
+            android:tag="Strawberry" />
+
+    </RelativeLayout>
+        
+    </RelativeLayout>
+
+</ScrollView>

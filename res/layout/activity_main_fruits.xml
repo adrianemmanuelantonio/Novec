@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fa6a6a" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#171717" >
+			<EditText
+        		android:id="@+id/speak_text"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:textSize="30sp"
+        		android:layout_toLeftOf="@+id/speak_button"
+		        android:hint="@string/hint"
+		        android:inputType="text"
+		        android:textColor="#FFFFFF"
+		        android:maxLines="1" />
+
+    		<ImageButton
+    		    android:id="@+id/clear_button"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_alignParentRight="true"
+    		    android:layout_alignParentTop="true"
+    		    android:contentDescription="@string/imgdesc"
+    		    android:src="@drawable/eraser"
+    		    android:text="@string/clear" />
+
+    		<ImageButton
+		        android:id="@+id/speak_button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_toLeftOf="@+id/clear_button"
+		        android:text="@string/speak"
+		        android:src="@drawable/speak"
+		        android:contentDescription="@string/imgdesc" />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </android.support.v4.view.ViewPager>
+        </RelativeLayout>
+
+    </RelativeLayout>

@@ -51,7 +51,8 @@ public class Categories extends Activity{
 	     btnFruits.setOnClickListener(new View.OnClickListener() {
 			 public void onClick(View v) {
 				 //Toast.makeText(Categories.this, "Fruits", Toast.LENGTH_LONG).show();
-				 Intent i = new Intent(Categories.this, CategoryItems.class);
+				 //Intent i = new Intent(Categories.this, CategoryItems.class);
+				 Intent i = new Intent(Categories.this, Fruits.class);
 				 i.putExtra("category", "Fruits");
 	             startActivity(i);
 			 }
